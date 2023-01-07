@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="dropbox">
+        Choose file by the button below or Drop here.
+    </div><br>
+    <input type="file" name="inputFile" id="inputFile" data-target="file-uploader" multiple>  
+    <!-- multiple多檔上傳  -->
+    <br><br>
+    <table>
+        <tr>
+            <th>檢核項目</th><th>需求規格</th><th>檢查結果</th><th>是否通過</th>
+        </tr>
+    </table>
+    <p>判斷影片長度/格式/解析度是否符合規定</p>
+    <script src="//unpkg.com/jquery"></script>
+    <script src="main.js"></script>
+</body>
+</html>

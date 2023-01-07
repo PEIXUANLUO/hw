@@ -3,7 +3,8 @@
 /* Wrapper */
 
 	#wrapper {
-		opacity: 1 !important;
+		opacity: 1 !important; 	
+		/* 透明度，最大1，最小0 */
 	}
 
 /* Nav */

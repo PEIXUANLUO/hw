@@ -21,7 +21,7 @@
 			<a href="#" class="icon solid fa-home"><span>Home</span></a>
 			<a href="#work" class="icon solid fa-folder"><span>Work</span></a>
 			<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
-			<a href="https://www.instagram.com/" class="icon brands fa-twitter"><span>Twitter</span></a>
+			<a href="#Video" class="icon solid fa-video"><span>Video</span></a>
 		</nav>
 
 		<!-- Main -->
@@ -35,7 +35,7 @@
 				</header>
 				<a href="#work" class="jumplink pic">
 					<span class="arrow icon solid fa-chevron-right"><span>See my work</span></span>
-					<img src="./images/2.jpg" alt="" class="bear2"/>
+					<img src="./images/2.jpg" alt="" class="bear2" />
 				</a>
 			</article>
 
@@ -49,42 +49,29 @@
 				</p>
 				<section>
 					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<a target="_blank" href="./INTROTOJS/index.html" class="image fit"><img
-									src="images/pic01.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./GetLocation/GetLocation.html" class="image fit"><img src="images/pic09.jpg" alt="">GetLocation</a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./VideoFormatChecker/VideoFormatChecker.html" class="image fit"><img src="images/pic10.jpg" alt="">VideoFormatChecker</a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic03.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./colorpicker/color.html" class="image fit"><img src="images/pic03.jpg" alt="">colorpicker</a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./GAME/index.html" class="image fit"><img src="images/pic04.jpg" alt="">game</a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic05.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./weatherLocation/index.html" class="image fit"><img src="images/pic05.jpg" alt="">weather</a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic06.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./youtube/index.html" class="image fit"><img src="images/pic06.jpg" alt="">music player</a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic07.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./poster/index.html" class="image fit"><img src="images/pic07.jpg" alt="">poster</a>
 						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic08.jpg" alt=""></a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic09.jpg" alt=""></a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic10.jpg" alt=""></a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic11.jpg" alt=""></a>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
+						<div class="col-3 col-4-medium col-6-small">
+							<a href="./jokeRandom/index.html" class="image fit"><img src="images/pic08.jpg" alt="">joke</a>
 						</div>
 					</div>
 				</section>
@@ -118,6 +105,37 @@
 				</form>
 			</article>
 
+			<!-- Video  -->
+			<article id="Video" class="panel">
+				<header>
+					<h2>Video</h2>
+				</header>
+				<p>
+					Phasellus.
+				</p>
+				<div>
+					<!-- <video src="./classic-care-bears-care-a-lots-birthday-part-1.mp4" width="750px"></video> -->
+					<video id="myVideo" style="width: 800px;"></video><br>
+					<button id="playBtn">Play</button>
+					<button id="fullBtn">FullScreen</button>
+					<br>
+					<br>
+					<div>
+						<p>Volume : <span id="volumeDisplay">?</span>
+							<button id="lowerVolumeBtn">-</button>
+							<button id="higherVolumeBtn">+ </button>
+						</p>
+					</div>
+
+					<div>
+						<p>Time : <span id="timeDisplay">? / ?</span><br>
+							<input type="range" id="progressBar" min="0" value="0" style="width: 800px; background: #d3d3d3;">
+						</p>
+					</div>
+
+				</div>
+			</article>
+
 		</div>
 
 		<!-- Footer -->
@@ -136,6 +154,8 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script src="//unpkg.com/jquery"></script>
+	<script src="./js/video.js"></script>
 
 </body>
 
